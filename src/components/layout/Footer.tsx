@@ -80,7 +80,11 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-slate-100 mt-8 pt-8 text-center text-slate-400 text-sm">
-          <p>© {new Date().getFullYear()} PayWorth.io. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} PayWorth.io. All rights reserved. 
+            <span className="mx-2">|</span> 
+            A <a href="https://h16d.com/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">h16d</a> Company
+          </p>
         </div>
       </div>
     </footer>
