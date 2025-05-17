@@ -24,7 +24,7 @@ const PricingOption: React.FC<{
       <h3 className="font-bold text-xl mb-2">{title}</h3>
       <div className="mb-4">
         <span className="text-3xl font-bold">{price}</span>
-        {price !== 'Custom' && <span className="text-slate-600 ml-1">/month</span>}
+        <span className="text-slate-600 ml-1">/month</span>
       </div>
       <p className="text-slate-600 mb-6">{description}</p>
       <ul className="space-y-3 mb-8 flex-grow">
@@ -58,7 +58,7 @@ const PricingSection: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <PricingOption 
             title="Basic"
             price="$49"
@@ -87,21 +87,6 @@ const PricingSection: React.FC = () => {
             ]}
             cta="Start Free Trial"
             featured
-          />
-          
-          <PricingOption 
-            title="Enterprise"
-            price="Custom"
-            description="For organizations supporting multiple team members."
-            features={[
-              "Everything in Pro",
-              "Team Coaching Sessions",
-              "Custom Negotiation Workshops",
-              "Dedicated Account Manager",
-              "Bulk Discounts",
-              "Advanced Analytics"
-            ]}
-            cta="Contact Sales"
           />
         </div>
       </div>
