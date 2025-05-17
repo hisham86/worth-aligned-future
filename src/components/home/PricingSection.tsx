@@ -24,7 +24,7 @@ const PricingOption: React.FC<{
       <h3 className="font-semibold text-xl mb-2 text-slate-800">{title}</h3>
       <div className="mb-4">
         <span className="text-3xl font-bold text-slate-900">{price}</span>
-        <span className="text-slate-500 ml-1">/month</span>
+        <span className="text-slate-500 ml-1">{title === "Private Coaching" ? "/hour" : "/month"}</span>
       </div>
       <p className="text-slate-500 mb-6 text-sm">{description}</p>
       <ul className="space-y-3 mb-8 flex-grow">
@@ -74,8 +74,8 @@ const PricingSection: React.FC = () => {
           />
           
           <PricingOption 
-            title="Pro"
-            price="$99"
+            title="Private Coaching"
+            price="MYR 400"
             description="For professionals seeking comprehensive career advancement."
             features={[
               "Everything in Basic",
