@@ -1,73 +1,106 @@
-# Welcome to your Lovable project
 
-## Project info
+# PayWorth.io - Career Coaching Platform
+
+## Project Overview
+
+PayWorth.io is a career coaching platform specializing in job interview preparation and salary negotiation. We help professionals maximize their earning potential and advance their careers.
 
 **URL**: https://lovable.dev/projects/463836fd-1b39-4728-b2dc-11cc62504b07
 
-## How can I edit this code?
+## Development Setup
 
-There are several ways of editing your application.
+### Option 1: Use Lovable AI Editor
 
-**Use Lovable**
+The simplest way to edit this project is through the [Lovable AI Editor](https://lovable.dev/projects/463836fd-1b39-4728-b2dc-11cc62504b07). Just start chatting with the AI to make changes to the code.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/463836fd-1b39-4728-b2dc-11cc62504b07) and start prompting.
+### Option 2: Local Development
 
-Changes made via Lovable will be committed automatically to this repo.
+Requirements: [Node.js & npm](https://github.com/nvm-sh/nvm#installing-and-updating) (we recommend installing via nvm)
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate into the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Option 3: GitHub Codespaces
 
-**Use GitHub Codespaces**
+1. Navigate to the repository on GitHub
+2. Click the "Code" button (green)
+3. Select the "Codespaces" tab
+4. Click "Create codespace on main" to launch a new development environment
+5. Once loaded, run `npm install && npm run dev` in the terminal
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Option 4: Edit Directly in GitHub
 
-## What technologies are used for this project?
+For small changes:
+1. Navigate to the file you want to edit
+2. Click the pencil icon (Edit)
+3. Make your changes
+4. Commit with a descriptive message
 
-This project is built with:
+## Technology Stack
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Frontend Framework**: React with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Routing**: React Router
+- **Data Fetching**: TanStack Query (React Query)
+- **Hosting**: Lovable Deployment Platform
 
-## How can I deploy this project?
+## Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/463836fd-1b39-4728-b2dc-11cc62504b07) and click on Share -> Publish.
+- `src/components/`: UI components organized by feature/functionality
+- `src/pages/`: Page components for different routes
+- `src/lib/`: Utility functions and helpers
+- `src/hooks/`: Custom React hooks
 
-## Can I connect a custom domain to my Lovable project?
+## Git Workflow
 
-Yes, you can!
+```bash
+# Create a new branch for your feature
+git checkout -b feature/your-feature-name
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+# Make your changes, then stage them
+git add .
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Commit with a descriptive message
+git commit -m "Add your descriptive commit message"
+
+# Push to the remote repository
+git push origin feature/your-feature-name
+
+# Create a Pull Request on GitHub for review
+```
+
+## Deployment
+
+1. Open [Lovable](https://lovable.dev/projects/463836fd-1b39-4728-b2dc-11cc62504b07)
+2. Click on Share -> Publish
+3. Follow the prompts to deploy your application
+
+## Custom Domain Setup
+
+To connect a custom domain:
+1. Navigate to Project > Settings > Domains
+2. Click "Connect Domain"
+3. Follow the instructions to set up DNS records
+
+For more details, see: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## License & Attribution
+
+© 2025 PayWorth.io. All rights reserved.
+
+A [h16d](https://h16d.com/) Company
