@@ -13,17 +13,17 @@ const PricingOption: React.FC<{
 }> = ({ title, price, description, features, cta, featured = false }) => {
   return (
     <div 
-      className={`rounded-xl p-8 ${featured ? 'border-2 border-blue-600 shadow-lg' : 'border border-slate-200'} 
-      ${featured ? 'bg-white' : 'bg-slate-50/50'} h-full flex flex-col`}
+      className={`rounded-xl p-8 ${featured ? 'bg-blue-50 border border-blue-200' : 'bg-white border border-slate-200'} 
+      h-full flex flex-col`}
     >
       {featured && (
-        <div className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium w-fit mx-auto -mt-12 mb-4">
-          Most Popular
+        <div className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium w-fit mb-4">
+          Recommended
         </div>
       )}
-      <h3 className="font-bold text-xl mb-2">{title}</h3>
+      <h3 className="font-bold text-xl mb-2 text-slate-800">{title}</h3>
       <div className="mb-4">
-        <span className="text-3xl font-bold">{price}</span>
+        <span className="text-4xl font-bold text-slate-900">{price}</span>
         <span className="text-slate-600 ml-1">/month</span>
       </div>
       <p className="text-slate-600 mb-6">{description}</p>
@@ -37,7 +37,7 @@ const PricingOption: React.FC<{
       </ul>
       <Button 
         variant={featured ? "default" : "outline"} 
-        className={`w-full ${featured ? "" : "hover:bg-blue-600 hover:text-white"}`}
+        className={`w-full ${featured ? "bg-blue-600 hover:bg-blue-700" : "hover:bg-blue-50 border-blue-600 text-blue-600"}`}
       >
         {cta}
       </Button>
@@ -47,14 +47,14 @@ const PricingOption: React.FC<{
 
 const PricingSection: React.FC = () => {
   return (
-    <div className="py-20 bg-white">
+    <div className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Simple, transparent pricing
+        <div className="max-w-2xl mx-auto text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
+            Transparent, straightforward pricing
           </h2>
-          <p className="text-xl text-slate-600">
-            Choose the plan that's right for where you are in your career journey.
+          <p className="text-lg text-slate-600">
+            No hidden fees. Choose the plan that works best for your career goals.
           </p>
         </div>
         
