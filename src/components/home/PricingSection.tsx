@@ -61,7 +61,7 @@ const PricingSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <PricingOption 
             title="Basic"
-            price="$49"
+            price="MYR 49"
             description="Perfect for job seekers looking for essential support."
             features={[
               "AI Interview Question Generator",
