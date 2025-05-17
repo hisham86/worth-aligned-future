@@ -25,23 +25,23 @@ const testimonials = [
 const TestimonialsSection: React.FC = () => {
   return (
     <div className="py-20 bg-slate-50">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-3 text-slate-800">
             Success stories from our clients
           </h2>
-          <p className="text-xl text-slate-600">
+          <p className="text-slate-500 text-base">
             Here's what people are saying about their PayWorth.io experience.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
-              <p className="text-slate-700 mb-6 italic">"{testimonial.quote}"</p>
+            <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+              <p className="text-slate-600 mb-6 text-sm">"{testimonial.quote}"</p>
               <div>
-                <p className="font-semibold">{testimonial.author}</p>
-                <p className="text-slate-600 text-sm">{testimonial.role}, {testimonial.company}</p>
+                <p className="font-medium text-slate-800">{testimonial.author}</p>
+                <p className="text-slate-500 text-xs">{testimonial.role}, {testimonial.company}</p>
               </div>
             </div>
           ))}
